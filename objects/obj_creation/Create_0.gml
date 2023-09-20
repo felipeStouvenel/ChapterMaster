@@ -1,4 +1,4 @@
-
+// TODO refactor
 keyboard_string="";
 
 ini_open("saves.ini");
