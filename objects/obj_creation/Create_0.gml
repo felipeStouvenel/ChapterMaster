@@ -12,7 +12,11 @@ settings_window_data=ini_read_string("Settings","window_data","fullscreen");
 ini_close();
 
 window_data=string(window_get_x())+"|"+string(window_get_y())+"|"+string(window_get_width())+"|"+string(window_get_height())+"|";
-window_old=window_data;if (window_get_fullscreen()=1){window_old="fullscreen";window_data="fullscreen";}
+window_old=window_data;
+if (window_get_fullscreen()=1){
+    window_old="fullscreen";
+    window_data="fullscreen";
+}
 restarted=0;custom_icon=0;
 
 
